@@ -17,7 +17,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: gold;
-    font-size: 10em;
+    font-size: clamp(6em, 8vw, 10em);
     font-family: 'Bebas Neue', cursive;
     white-space: pre-wrap;
     word-wrap: break-word;
