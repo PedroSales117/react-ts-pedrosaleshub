@@ -1,0 +1,98 @@
+.container {
+    padding: 20px;
+    background-color: black;
+    min-height: 100vh;
+    color: gold;
+}
+
+/* Buttons */
+.buttonsContainer {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.separator {
+    color: gold;
+    margin: 0 10px;
+}
+
+.button {
+    background-image: linear-gradient(to left, #B9931B, #dfbe54);
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.leftButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeButton {
+    background-color: transparent;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* Repo Grip */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.repoCard {
+    position: relative;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    padding: 10px;
+    background-image: linear-gradient(to left, #B9931B, #dfbe54);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.repoCard:hover {
+    transform: scale(1.05);
+}
+
+.repoLink {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Text Background */
+.textBackground {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    font-size: 4em;
+    font-family: 'Bebas Neue', cursive;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.2;
+}
