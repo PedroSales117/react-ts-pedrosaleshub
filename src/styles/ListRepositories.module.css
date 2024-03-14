@@ -58,6 +58,8 @@
 }
 
 .repoCard {
+  position: relative;
+  z-index: 2;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
   padding: 10px;
@@ -74,4 +76,21 @@
   color: black;
   font-weight: bold;
   text-decoration: underline;
+}
+
+/* Text Background */
+.textBackground {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: gold;
+  font-size: 4em;
+  font-family: 'Bebas Neue', cursive;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.2;
 }

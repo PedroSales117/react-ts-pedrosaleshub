@@ -9,7 +9,8 @@ const ListRepos = ({ filter }: { filter: string }) => {
   const navigate = useNavigate();
 
   const filterInfos = {
-    title: filter === 'ai' ? 'Back-end' : 'Artificial Intelligence',
+    current_buttom_title: filter === 'ai' ? 'Artificial Intelligence' : 'Back-end',
+    redirect_buttom_title: filter === 'ai' ? 'Back-end' : 'Artificial Intelligence',
     route: filter === 'ai' ? '/backend' : '/ai'
   };
 
@@ -29,13 +30,13 @@ const ListRepos = ({ filter }: { filter: string }) => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.textBackground}>
+        {filterInfos.current_buttom_title}
+      </div>
       <div className={styles.buttonsContainer}>
-        {/* Botão Back-end/Artificial Intelligence */}
         <button onClick={() => navigate(filterInfos.route)} className={styles.button}>
-          {filterInfos.title}
+          {filterInfos.redirect_buttom_title}
         </button>
-        
-        {/* Container para os botões "All Public Projects" e "Home" */}
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <button onClick={() => navigate('/all')} className={styles.linkButton}>
             All Public Projects
