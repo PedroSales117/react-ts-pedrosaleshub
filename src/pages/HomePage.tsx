@@ -64,6 +64,16 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={styles.homeContainer}>
+      <div className={styles.githubButtonContainer}>
+        <a
+          href="https://github.com/PedroSales117"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.githubButton}
+        >
+        </a>
+      </div>
+
       <div className={styles.textBackground}>
         {typedText}
         <span className={isCaretVisible ? styles.caret : styles.caretHidden}>_</span>
