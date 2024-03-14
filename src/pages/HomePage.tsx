@@ -64,6 +64,15 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={styles.homeContainer} onClick={() => navigate('/')}>
+      <div className={styles.githubButtonContainer}>
+        <a
+          href="https://github.com/PedroSales117"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.githubButton}
+        >
+        </a>
+      </div>
       <div className={styles.textBackground}>
         {typedText}
         <span className={isCaretVisible ? styles.caret : styles.caretHidden}>_</span>
@@ -87,7 +96,7 @@ const HomePage: React.FC = () => {
       <button
         onClick={(event) => handleClick('/all', event)}
         className={`${styles.allProjectsButton} ${styles.textLink}`}
-        style={{padding: 0, background: 'none', border: 'none', color: 'white', textDecoration: 'underline'}}
+        style={{ padding: 0, background: 'none', border: 'none', color: 'white', textDecoration: 'underline' }}
       >
         All Public Projects
       </button>
