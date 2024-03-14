@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
   const typingInProgress = useRef<boolean>(false);
   const typingIntervalRef = useRef<any>(null);
   const [activeButton, setActiveButton] = useState<string | null>(null);
-  const texts = useRef(['HELLO WORLD', 'PLAY HALO', 'GEN AI', 'PRINT("IM HERE")', '01000101 01110101 00100000 01110100 01100101 00100000 01100001 01101101 01101111 00101100 00100000 01010011 01100001 01110010 01100001 01101000']);
+  const texts = useRef(['HELLO WORLD', 'PLAY HALO', 'GEN AI', 'PRINT("IM HERE")']);
   const currentTextIndex = useRef(0);
 
   useEffect(() => {
