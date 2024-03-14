@@ -1,0 +1,82 @@
+.homeContainer {
+    position: relative;
+    color: black;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Text Background */
+.textBackground {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: gold;
+    font-size: 10em;
+    font-family: 'Bebas Neue', cursive;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    text-align: center;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.caret {
+    opacity: 1;
+    animation: blink 1.06s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.caretHidden {
+    visibility: hidden;
+}
+
+
+/* Button */
+.button {
+    position: relative;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    background-image: linear-gradient(to left, #B9931B, #dfbe54);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.allProjectsButton {
+    position: relative;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.button:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.dimmed {
+    opacity: 0.6;
+}
