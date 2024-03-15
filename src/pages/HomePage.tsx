@@ -64,16 +64,22 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={styles.homeContainer}>
-      <div className={styles.githubButtonContainer}>
-        <a
-          href="https://github.com/PedroSales117"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.githubButton}
-        >
-        </a>
+      <div className={styles.headerContainer}>
+        <div className={styles.centerTitle}>
+          <p>
+            {`PEDRO SALES 117 - PROJECTS HUB`}
+          </p>
+        </div>
+        <div className={styles.githubButtonContainer}>
+          <a
+            href="https://github.com/PedroSales117"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.githubButton}
+          >
+          </a>
+        </div>
       </div>
-
       <div className={styles.textBackground}>
         {typedText}
         <span className={isCaretVisible ? styles.caret : styles.caretHidden}>_</span>
