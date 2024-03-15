@@ -1,3 +1,4 @@
+/* Containers */
 .headerContainer {
     display: flex;
     margin-bottom: 20px;
@@ -6,40 +7,11 @@
     width: 100%;
 }
 
-.centerTitle {
-    position: absolute;
-    font-family: 'Bebas Neue', cursive;
-    width: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
 .githubButtonContainer {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 10;
-}
-
-.githubButton {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-image: url('https://avatars.githubusercontent.com/u/91754689?v=4');
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-}
-
-.githubButtonContainer:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
 }
 
 .homeContainer {
@@ -51,6 +23,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+/**/
+
+/* Hovers */
+.githubButtonContainer:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    font-weight: bold;
+    transform: scale(1.1);
+}
+/**/
+
+/* Texts */
+.centerTitle {
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
 .textBackground {
@@ -68,22 +66,20 @@
     z-index: 1;
     opacity: 0.2;
 }
+/**/
 
+/* Caret */
 .caret {
     opacity: 1;
     animation: blink 1.06s steps(2, start) infinite;
 }
 
-@keyframes blink {
-    to {
-        visibility: hidden;
-    }
-}
-
 .caretHidden {
     visibility: hidden;
 }
+/**/
 
+/* Buttons */
 .button {
     position: relative;
     z-index: 2;
@@ -112,11 +108,29 @@
     transition: transform 0.3s ease;
 }
 
-.button:hover {
-    font-weight: bold;
-    transform: scale(1.1);
+.githubButton {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('https://avatars.githubusercontent.com/u/91754689?v=4');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
 }
+/**/
 
+/* Animations */
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+/**/
+
+/* Effects */
 .dimmed {
     opacity: 0.6;
 }
+/**/
