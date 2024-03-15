@@ -18,6 +18,30 @@
     z-index: 2;
 }
 
+.githubButtonContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.githubButton {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('https://avatars.githubusercontent.com/u/91754689?v=4');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}
+
+.githubButtonContainer:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 .homeContainer {
     position: relative;
     color: gold;
@@ -72,7 +96,7 @@
     cursor: pointer;
     font-size: 16px;
     border-radius: 10px;
-    transition: transform 0.3s ease, font-weight 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .allProjectsButton {
@@ -85,7 +109,7 @@
     cursor: pointer;
     font-size: 16px;
     border-radius: 15px;
-    transition: transform 0.3s ease, font-weight 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .button:hover {
@@ -95,23 +119,4 @@
 
 .dimmed {
     opacity: 0.6;
-}
-
-.githubButtonContainer {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 10;
-}
-
-.githubButton {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-image: url('https://avatars.githubusercontent.com/u/91754689?v=4');
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
 }
